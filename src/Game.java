@@ -10,10 +10,12 @@ public class Game extends Observable {
     private List<Bullet> bullets;
     private Thread mainLoop;
     private boolean alive;
+    private ReusableBulletsPool bulletsPool;
 
     public Game() {
         alive = true;
         bullets = new ArrayList<Bullet>();
+        bulletsPool = ReusableBulletsPool.getInstance();
         mainLoop = new Thread() {
             @Override
             public void run() {

@@ -27,4 +27,30 @@ public class Bullet {
     public int getY() {
         return y;
     }
+
+    /*
+     * to set the new position for the reuse
+     */
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    /*
+     * to set the new direction for the reuse
+     */
+
+    public void setDx(int dx) {
+        this.dx = dx;
+    }
+
+    public void setDy(int dy) {
+        this.dy = dy;
+    }
+
+
 }
